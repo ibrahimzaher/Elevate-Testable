@@ -20,7 +20,11 @@
   ],
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/dashboard/:path*",
+      "destination": "/dashboard/index.html"
+    },
+    {
+      "source": "/:path*",
       "destination": "/index.html"
     }
   ]

@@ -1,3 +1,3 @@
 {
-  "dashboard": "http://localhost:4201/mf-manifest.json"
+  "dashboard": "/dashboard/mf-manifest.json"
 }

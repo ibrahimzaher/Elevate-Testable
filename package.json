@@ -6,9 +6,10 @@
   "engines": {
     "node": ">=22.0.0"
   },
-   "scripts": {
+  "scripts": {
     "build:ecommerce": "nx build E-commerce",
     "build:dashboard": "nx build dashboard",
+    "build:vercel": "nx build E-commerce && nx build dashboard && mkdir -p dist/apps/E-commerce/dashboard && cp -r dist/apps/dashboard/* dist/apps/E-commerce/dashboard/",
     "serve": "nx serve E-commerce"
   },
   "dependencies": {
@@ -48,6 +49,7 @@
   "devDependencies": {
     "@analogjs/vite-plugin-angular": "~1.19.1",
     "@analogjs/vitest-angular": "~1.19.1",
+    "@angular-devkit/architect": "20.3.1",
     "@angular-devkit/build-angular": "20.3.1",
     "@angular-devkit/core": "20.3.1",
     "@angular-devkit/schematics": "20.3.1",
