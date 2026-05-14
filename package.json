@@ -7,9 +7,9 @@
     "node": ">=22.0.0"
   },
    "scripts": {
-    "build:ecommerce": "npx nx build E-commerce",
-    "build:dashboard": "npx nx build dashboard",
-    "serve": "npx nx serve E-commerce"
+    "build:ecommerce": "nx build E-commerce",
+    "build:dashboard": "nx build dashboard",
+    "serve": "nx serve E-commerce"
   },
   "dependencies": {
     "@angular/animations": "20.3.1",
